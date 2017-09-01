@@ -7,7 +7,7 @@ class BulletUp extends GameImage {
     setup() {
         this.speedX = 3
         this.speedY = 2
-        this.x = randomBetween(0, 300)
+        this.x = randomBetween(0, 360)
         this.y = randomBetween(0, 1)
     }
 

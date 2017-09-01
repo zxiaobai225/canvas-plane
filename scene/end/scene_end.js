@@ -23,7 +23,7 @@ class SceneEnd extends _Scene {
         this.score = new GameImage(this.game, 'score')
 
         this.end = new GameImage(this.game, 'restart')
-        this.end.x = 90
+        this.end.x = 120
         this.end.y = 240
     }
 

@@ -23,11 +23,11 @@ class SceneTitle extends _Scene {
         this.bg = new GameImage(this.game, 'sky')
 
         this.title = new GameImage(this.game, 'title')
-        this.title.x = 50
+        this.title.x = 60
         this.title.y = 150
 
         this.start = new GameImage(this.game, 'start')
-        this.start.x = 170
+        this.start.x = 180
         this.start.y = 300
     }
 
