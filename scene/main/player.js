@@ -6,7 +6,7 @@ class Player extends GameImage {
 
     setup() {
         this.speed = 5
-        this.x = 125
+        this.x = 150
         this.y = 500
         this.cooldown = 0
         this.firepower = 1
@@ -139,7 +139,7 @@ class Player extends GameImage {
     }
 
     moveRight() {
-        if (this.x < 350 - this.w) {
+        if (this.x < 400 - this.w) {
             this.x += this.speed
         }
     }
