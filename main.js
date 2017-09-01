@@ -25,8 +25,6 @@ var main = function () {
         g.runWithScene(s)
     })
 
-    log(game.canvas.width, game.canvas.height)
-
     window.addEventListener('keydown', function (event) {
         var key = event.key
         if (key === 'p') {

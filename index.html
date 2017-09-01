@@ -59,11 +59,12 @@
     system.android = ua.indexOf('Android') > -1;
 
     function getViewPort() {
-        var viewHeight = window.innerHeight || document.documentElement.clientHeight;
-        var viewWidth = window.innerWidth || document.documentElement.clientWidth;
+        var viewHeight = document.body.clientHeight;
+        var viewWidth = document.body.clientWidth;
+        console.log(viewHeight, viewWidth);
         if (system.iphone) {
             document.body.style.width = viewWidth;
-            canvas.width = viewWidth;
+            canvas.width = viewWidth
             canvas.height = viewHeight;
         }
         else if (system.win) {
