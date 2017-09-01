@@ -63,7 +63,7 @@ class Scene extends _Scene {
             var x = event.changedTouches[0].clientX
             var y = event.changedTouches[0].clientY
             if (enableDrag) {
-                if (-5 < x && x < 405 - s.player.w) {
+                if (-5 < x && x < 355 - s.player.w) {
                     s.player.x = x
                 }
                 if (-5 < y && y < 605 - s.player.h) {
@@ -85,7 +85,7 @@ class Scene extends _Scene {
         super.draw()
         this.game.context.fillText('X ' + this.bomb.count, 40, 585);
         this.game.context.fillText("分数: " + this.score, 5, 15);
-        this.game.context.fillText("难度: " + this.game.difficulty, 355, 15);
+        this.game.context.fillText("难度: " + this.game.difficulty, 305, 15);
     }
 
     update() {

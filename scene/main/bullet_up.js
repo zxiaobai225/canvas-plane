@@ -7,12 +7,12 @@ class BulletUp extends GameImage {
     setup() {
         this.speedX = 3
         this.speedY = 2
-        this.x = randomBetween(0, 360)
+        this.x = randomBetween(0, 300)
         this.y = randomBetween(0, 1)
     }
 
     update() {
-        if (this.x < 0 || this.x > 400 - this.w) {
+        if (this.x < 0 || this.x > 350 - this.w) {
             this.speedX *= -1
         }
         if (this.y < 0 || this.y > 600 - this.h) {
