@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html style="overflow: hidden">
 <head>
     <meta charset="UTF-8" name="viewport" content="width=device-width,height=device-height,initial-scale=1,maximum-scale=1,user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -12,6 +12,11 @@
             <!--border: 1px black solid;-->
         <!--}-->
     <!--</style>-->
+    <script>
+        document.addEventListener('touchStart',function(e){
+            e.preventDefault();
+        })
+    </script>
     <!-- game 相关文件 -->
     <script src="game/game.js"></script>
     <script src="game/utils.js"></script>
