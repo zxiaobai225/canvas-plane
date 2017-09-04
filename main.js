@@ -1,7 +1,7 @@
 var main = function () {
     var images = {
-        player: 'images/player.png',
         player1: 'images/player1.png',
+        player2: 'images/player2.png',
         sky: 'images/sky.png',
         enemy0: 'images/enemy0.png',
         enemy1: 'images/enemy1.png',

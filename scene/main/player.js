@@ -1,6 +1,6 @@
 class Player extends GameImage {
     constructor(game) {
-        super(game, 'player')
+        super(game, 'player1')
         this.setup()
     }
 
@@ -36,17 +36,15 @@ class Player extends GameImage {
     }
 
     fired(firepower) {
-        if (firepower === 2) {
-            this.fire2()
-        } else if (firepower === 3) {
-            this.fire3()
-        } else if (firepower === 4) {
-            this.fire4()
-        } else if (firepower === 5) {
-            this.fire5()
-        } else {
-            this.fire1()
+        var t = this
+        var firepowerNames = {
+            1: function(){t.fire1()},
+            2: function(){t.fire2()},
+            3: function(){t.fire3()},
+            4: function(){t.fire4()},
+            5: function(){t.fire5()},
         }
+        firepowerNames[firepower]()
     }
 
     fire1() {
@@ -117,8 +115,6 @@ class Player extends GameImage {
         this.scene.addElement(b1)
         this.scene.addElement(b2)
     }
-
-
 
 
     collide(other) {

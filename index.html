@@ -1,44 +1,36 @@
 <!DOCTYPE html>
-<html style="overflow: hidden">
+<html style="overflow: hidden; height: 100%;">
 <head>
-    <meta charset="UTF-8" name="viewport" content="width=device-width,height=device-height,initial-scale=1,maximum-scale=1,user-scalable=no">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta content="yes" name="apple-mobile-web-app-capable">
-    <meta name="HandheldFriendly" content="true">
-
-    <title>打飞机</title>
-    <!--<style media="screen">-->
-        <!--canvas {-->
-            <!--border: 1px black solid;-->
-        <!--}-->
-    <!--</style>-->
-    <script>
-        document.addEventListener('touchStart',function(e){
-            e.preventDefault();
-        })
-    </script>
-    <!-- game 相关文件 -->
-    <script src="game/game.js"></script>
-    <script src="game/utils.js"></script>
-    <script src="game/base_scene.js"></script>
-    <script src="game/image.js"></script>
-    <!-- 场景文件 -->
-    <script src="scene/main/player.js"></script>
-    <script src="scene/main/bomb.js"></script>
-    <script src="scene/main/bomb_up.js"></script>
-    <script src="scene/main/bullet.js"></script>
-    <script src="scene/main/bullet_up.js"></script>
-    <script src="scene/main/enemy.js"></script>
-    <script src="scene/main/enemy_bullet.js"></script>
-    <script src="scene/main/boom.js"></script>
-    <script src='scene/main/scene.js'></script>
-    <!-- 结束和标题场景 -->
-    <script src='scene/end/scene_end.js'></script>
-    <script src='scene/title/scene_title.js'></script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" id="viewport" name="viewport">
+<title>打飞机</title>
+<!--<style media="screen">-->
+    <!--canvas {-->
+        <!--border: 1px black solid;-->
+    <!--}-->
+<!--</style>-->
+<!-- game 相关文件 -->
+<script src="game/game.js"></script>
+<script src="game/utils.js"></script>
+<script src="game/base_scene.js"></script>
+<script src="game/image.js"></script>
+<!-- 场景文件 -->
+<script src="scene/main/player.js"></script>
+<script src="scene/main/bomb.js"></script>
+<script src="scene/main/bomb_up.js"></script>
+<script src="scene/main/bullet.js"></script>
+<script src="scene/main/bullet_up.js"></script>
+<script src="scene/main/enemy.js"></script>
+<script src="scene/main/enemy_bullet.js"></script>
+<script src="scene/main/boom.js"></script>
+<script src='scene/main/scene.js'></script>
+<!-- 结束和标题场景 -->
+<script src='scene/end/scene_end.js'></script>
+<script src='scene/title/scene_title.js'></script>
 </head>
-<body style="overflow: hidden;">
+<body style="overflow: hidden; height: 100%;">
 <canvas id="id-canvas" width="400" height="600"></canvas>
-<script>
+<!-- <script>
     var canvas = document.getElementById('id-canvas');
 
     var ua = navigator.userAgent;
@@ -80,7 +72,7 @@
     }
     getViewPort();
 
-</script>
+</script>-->
 <script src="main.js"></script>
 </body>
 </html>
