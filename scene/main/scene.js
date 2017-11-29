@@ -10,12 +10,16 @@ class Scene extends _Scene {
         var game = this.game
         game.setup()
 
+        for (var i = 0; i < 3; i++){
+            var bg = new BackGround(game)
+            bg.y = i * -600
+            this.addElement(bg)
+        }
+
         this.numberOfEnemies = 15
-        this.bg = new GameImage(game, 'sky')
         this.bomb = new Bomb(game)
         this.player = new Player(game)
 
-        this.addElement(this.bg)
         this.addElement(this.bomb)
         this.addElement(this.player)
 

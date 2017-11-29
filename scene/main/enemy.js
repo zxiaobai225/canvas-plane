@@ -8,7 +8,7 @@ class Enemy extends GameImage {
     }
 
     setup() {
-        this.speed = randomBetween(this.game.difficulty, this.game.difficulty + 1)
+        this.speed = randomBetween(this.game.difficulty + 1, this.game.difficulty + 2)
         this.x = randomBetween(0, 370)
         this.y = -randomBetween(100, 200)
         this.cooldown = randomBetween(50, 100)
